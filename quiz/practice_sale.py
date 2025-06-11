@@ -38,3 +38,21 @@ for idx in range(1,len(sales)):
         sales_summary['min_date'] = idx + 1
 
 print(sales_summary)
+
+
+
+# 구조화 3번째
+sales_summary = {'max_sales':sales[0],
+                'max_date':1,
+                'min_sales':sales[0],
+                'min_date':1}
+
+for idx, sale in enumerate(sales):
+    if sales_summary['max_sales'] < sale:
+        sales_summary['max_sales'] = sale
+        sales_summary['max_date'] = idx + 1
+    if sales_summary['min_sales'] > sale:
+        sales_summary['min_sales'] = sale
+        sales_summary['min_date'] = idx + 1
+    
+print(sales_summary)
