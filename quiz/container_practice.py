@@ -23,16 +23,16 @@ print(id(a))
 # 1. 알파벳 소문자가 붙어 있는 문자열을 입력으로 받아,
 # 각 글자를 원소로 갖는 리스트로 변환하여 출력하세요.
 print('====형변환====')
-# word = input('단어를 입력해 주세요.')
-# print(word)
-# print(type(word))
-# print(id(word))
+word = input('단어를 입력해 주세요.')
+print(word)
+print(type(word))
+print(id(word))
 
 # 리스트로 변환하여 재할당
-# word = list(word)
-# print(word)
-# print(type(word))
-# print(id(word))
+word = list(word)
+print(word)
+print(type(word))
+print(id(word))
 
 # 2. 문자열을 입력받아, 해당 문자열이 펠린드롬인지 아닌지 판별하세요. 
 # 앞으로 읽은 것과 거꾸로 읽은 것이 같은 단어를 펠린드롬이라고 합니다.
