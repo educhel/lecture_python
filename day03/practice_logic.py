@@ -25,9 +25,10 @@ for vote in votes:
 print(result)
 print('수지가 반장이 되었습니다.')
 
-# # 이후 배울 내용 맛보기
-# result_lst = list(result.items())
-# print(result_lst)
+# 이후 배울 내용 맛보기
+result_lst = list(result.items())
+print(result_lst)
 # result_lst.sort(key=lambda x:-x[1])
-# print(result_lst)
-# print(result_lst[0][0])
+result_lst = sorted(result_lst,key=lambda x:-x[1])
+print(result_lst)
+print(result_lst[0][0])
