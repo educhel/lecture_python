@@ -229,3 +229,29 @@ print('===반복문===')
 for i in range(10):
     if i % 2 == 0:
         print(i)
+
+
+print('===함수===')
+
+# 내장함수
+# print(numbers)
+# print(len(numbers))
+# print(number)
+# print(abs(-1))
+
+# 사용자 정의 함수
+# 선언 (define)
+# 함수를 만들었을 뿐
+def abs_func(n): # n은 매개변수
+    if n < 0:
+        answer = -1*n
+    else:
+        answer = n
+    return answer
+
+# 호출 (call)
+# i에 -1을 전달해줘서, 함수 내에서 사용하도록 했다.
+answer = abs_func(-1) # -1 = 인자 (argument)
+print(answer)
+
+# print(n)
