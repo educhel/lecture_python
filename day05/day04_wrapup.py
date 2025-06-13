@@ -80,4 +80,56 @@ example_b = sorted(example, key=lambda x:-x[1])
 
 print(example_b)
 
+# 리스트 
+# 순서 o, 변경 o
+numbers = [10,20,30,40,50]
+
+# 추가 -> 순서가 있게 추가 (가장 맨 끝에)
+numbers.append(60) 
+# 나 자신을 바꾸어 버리면 되기 때문에
+# 반환하는 것이 없다.
+
+print(numbers)
+
+# 인덱스 기준
+# 삭제 - 위치를 기준으로 삭제
+numbers.pop(1)
+print(numbers)
+
+# 추가 - 위치를 기준으로 추가
+numbers.insert(1,200)
+print(numbers)
+
+# 추가 - 여러개의 값을 추가
+# numbers.append(1,2,3,4) # 에러
+# numbers.append([1,2,3,4])
+# print(numbers)
+
+numbers.extend([1,2,3,4,5])
+print(numbers)
+
+# 삭제 - 값을 기준으로 삭제
+# 없는 경우는 에러 발생
+numbers.remove(10)
+print(numbers)
+
+# 정렬
+numbers.sort()
+print(numbers)
+
+
+# 세기 값을 기준으로 count
+cnt = numbers.count(1)
+print(cnt)
+
+gems = [1,2,3,3,2,3,3,1]
+
+print(gems.count(1))
+print(gems.count(2))
+print(gems.count(3))
+
+# 해당하는값의 위치를 반환
+print(gems.index(1))
+# 가장 첫 번째 나타난 값의 위치 나타내 줌
+
 
